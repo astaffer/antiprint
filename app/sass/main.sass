@@ -53,6 +53,33 @@ body
 a
   img
     border: none
+.g-phone
+  font-size: 26px
+  line-height: 28px
+.roboto-thin
+  font-family: 'roboto', sans-serif
+  font-style: normal
+  font-weight: 100
+
+.roboto-bold, .bold-price
+  font-family: 'roboto', sans-serif
+  font-style: normal
+  font-weight: 700
+
+.roboto-light
+  font-family: 'roboto', sans-serif
+  font-style: normal
+  font-weight: 300
+
+.roboto-medium
+  font-family: 'roboto', sans-serif
+  font-style: normal
+  font-weight: 500
+
+.roboto-regular
+  font-family: 'roboto', sans-serif
+  font-style: normal
+  font-weight: 400
 
 .header
   background-color: $lightgreen
@@ -129,4 +156,115 @@ a
 .uppercase
   text-transform: uppercase
 
+/*mega-dropdown-menu */
+
+.navigation .nav-list > li
+  vertical-align: top
+  opacity: 1
+  width: 110px
+  &:hover
+    opacity: 0.6
+  > a
+    &:hover
+      text-decoration: none
+    >
+      span
+        font-size: 0.7em
+        display: block
+      img
+        height: 32px
+
+.mega-dropdown
+  position: static !important
+
+.mega-dropdown-menu
+  padding: 20px 15px 15px
+  text-align: center
+  display: block
+  background-color: #FF99CC
+  margin-top: 12px
+  width: 100%
+  border-radius: 0
+
+.mega-dropdown-menu-container
+  border: 0
+  margin: 0
+  padding: 0
+  width: 100%
+  display: none
+
+.mega-menu li
+  height: 100%
+
+.mega-dropdown-tail
+  position: relative
+  display: none
+  height: 0
+  z-index: 1002
+  top: 23px
+  &:before
+    content: ''
+    position: absolute
+    bottom: -1px
+    left: 50%
+    width: 0
+    height: 0
+    margin: 0 0 0 -8px
+    border-width: 0 10px 13px 10px
+    border-style: solid
+    border-color: transparent transparent #d0bb62 transparent
+  &:after
+    content: ''
+    position: absolute
+    bottom: -1px
+    left: 50%
+    width: 0
+    height: 0
+    margin: 0 0 0 -8px
+    border-width: 0 10px 13px 10px
+    border-style: solid
+    border-color: transparent transparent #d0bb62 transparent
+    margin: 0 0 0 -7px
+    border-width: 0 9px 12px 9px
+    border-color: transparent transparent #FF99CC transparent
+.navigation-bg
+  margin-top: 1px
+
+.navigation
+  background-color: #E769A8
+  height: 60px
+  color: #FFFFFF
+  font-family: 'Roboto',Helvetica,Arial,sans-serif
+  font-weight: 300
+  font-size: 18px
+  text-decoration: none
+  a
+    color: #FFFFFF
+    font-family: 'Roboto',Helvetica,Arial,sans-serif
+    font-weight: 300
+    font-size: 18px
+    text-decoration: none
+
+.list-f-line
+  margin-left: 90px
+  > li
+    float: left
+    padding-left: 15px
+    padding-right: 15px
+
+.navigation li
+  &.str
+    padding-top: 22px
+  height: 60px
+  line-height: 16px
+  padding-top: 12px
+  &:hover
+    background-color: #FF99CC
+
+.block100
+  margin-right: auto
+  margin-left: auto
+  width: 100%
+  min-width: 1096px
+/*mega-dropdown-menu */
 @import "media" // Всегда в конце
