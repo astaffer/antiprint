@@ -1,0 +1,132 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+a
+  img
+    border: none
+
+.header
+  background-color: $lightgreen
+  color: $white
+  height: 80px
+  .logo
+    float: left
+    margin-top: 20px
+    margin-right: 10px
+  .logo-text
+    font-size: 15px
+    line-height: 16px
+    margin-left: 95px
+    padding-top: 17px
+    text-transform: uppercase
+    width: 240px
+  .h-text-right
+    float: right
+  .p-button
+    float: right
+    margin-left: 20px
+    margin-top: 19px
+    text-align: right
+  .form-btn.btn-red1
+    font-size: 12px
+    height: 25px
+  .btn-red1
+    background: #ec1f8f
+    color: #FFFFFF
+    border-radius: 4px
+  .btn-red1:hover
+    background: #CC0066
+    color: #FFFFFF
+  img
+    height: 40px
+.b-logo 
+  width: 40%
+.p-info
+  padding-top: 18px
+  float: left
+.g-phone
+  font-size: 26px
+  line-height: 28px
+  span.glyphicon
+    font-size: 20px
+.g-time
+  font-size: .7em
+.after-phone
+  font-size: 13px
+  margin-top: -5px
+  letter-spacing: 3.6px
+
+.p-info
+  .g-time
+    a
+      i
+        color: #ec1f8f
+    .fancybox
+      float: right
+      color: #FFFFFF
+      text-decoration: none
+      font-weight: bolder
+      font-size: .8em!important
+      text-transform: uppercase
+      font-weight: 100
+.g-city
+  span
+    cursor: pointer
+    border-bottom: 1px dashed #CCCCCC
+    font-size: 18px
+    font-family: 'roboto', sans-serif
+    font-style: normal
+    font-weight: 300
+.uppercase
+  text-transform: uppercase
+
+@import "media" // Всегда в конце
