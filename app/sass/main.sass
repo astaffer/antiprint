@@ -50,6 +50,37 @@ body
   display: block
   max-width: 100%
   height: auto
+.h1
+  font-weight: 400!important
+  text-transform: uppercase
+  padding: 0
+  font-size: 36px
+  font: normal 36px 'Roboto',Helvetica,Arial,sans-serif
+  margin: 0 0 22px 0
+  line-height: 1.25
+  color: #222222
+  letter-spacing: -0.06ex
+.h2
+  line-height: 1.25
+  color: #222222
+  font-weight: 300!important
+  letter-spacing: -0.06ex
+  text-transform: uppercase
+  padding: 0
+  font-size: 36px
+  font: normal 36px 'Roboto',Helvetica,Arial,sans-serif
+  margin: 0 0 22px 0
+.h3
+  padding: 0
+  margin: 0
+  font-size: 30px
+  letter-spacing: -0.027ex
+  margin-bottom: 22px
+.h4
+  font-size: 20px
+  line-height: normal
+  margin-top: 10px;
+  margin-bottom: 10px;
 a
   img
     border: none
@@ -193,9 +224,6 @@ a
   width: 100%
   display: none
 
-.mega-menu li
-  height: 100%
-
 .mega-dropdown-tail
   position: relative
   display: none
@@ -266,5 +294,42 @@ a
   margin-left: auto
   width: 100%
   min-width: 1096px
+.mega-menu
+  li
+    height: 100%
+li.dropdown.mega-dropdown.active
+  min-width: 160px
+.bg-gray
+  background-color: #F4F4F4
+  color: #222222
+  border: 1px solid #E2E2E2
+  border-top-color: rgb(226, 226, 226)
+  border-top-style: solid
+  border-top-width: 1px
+  border-right-color: rgb(226, 226, 226)
+  border-right-style: solid
+  border-right-width: 1px
+  border-bottom-color: rgb(226, 226, 226)
+  border-bottom-style: solid
+  border-bottom-width: 1px
+  border-left-color: rgb(226, 226, 226)
+  border-left-style: solid
+  border-left-width: 1px
+  border-image-source: initial
+  border-image-slice: initial
+  border-image-width: initial
+  border-image-outset: initial
+  border-image-repeat: initial
+.main-header
+  padding-top: 30px
+  padding-bottom: 30px
+  &.bg-gray
+    border-bottom: 0
+  .main-header-text
+    padding-top: 30px
+.row-block
+  padding-bottom: 100px
+  &.bg-gray
+    border-top: 0
 /*mega-dropdown-menu */
 @import "media" // Всегда в конце
