@@ -36,7 +36,7 @@ body textarea:required:valid
 
 html, body
   height: 100%
-
+  font: normal 15px Arial, Helvetica, sans-serif
 body
   font-size: 16px
   min-width: 320px
@@ -63,7 +63,7 @@ body
 .h2
   line-height: 1.25
   color: #222222
-  font-weight: 300!important
+  font-weight: 300
   letter-spacing: -0.06ex
   text-transform: uppercase
   padding: 0
@@ -76,14 +76,82 @@ body
   font-size: 30px
   letter-spacing: -0.027ex
   margin-bottom: 22px
+  font-weight: normal;
+  font: normal 30px 'Roboto',Helvetica,Arial,sans-serif
 .h4
   font-size: 20px
   line-height: normal
   margin-top: 10px;
   margin-bottom: 10px;
 a
+  &:link, &:visited
+    text-decoration: underline
+    color: #4d4c4c
+  &:hover
+    text-decoration: none
+    color: #4d4c4c
+
+.clear
+  clear: both
+
+.left
+  float: left
+
+.right
+  float: right
+
+
+.b-button-rz
+  background: #E769A8
+  box-shadow: 0 3px 0 #FF3399
+
+.b-button
+  font-family: 'Roboto',Helvetica,Arial,sans-serif
+  font-weight: 100
+  width: 330px
+  height: 64px
+  text-align: center
+  vertical-align: middle
+  line-height: 64px
+  font-size: 30px
+  text-decoration: none
+  color: #fff
+  display: inline-block
+  -moz-border-radius: 6px
+  -webkit-border-radius: 6px
+  border-radius: 6px
+  -moz-transition: all 0.2s ease-out
+  -o-transition: all 0.2s ease-out
+  -webkit-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out
+  font-weight: 100
+  position: relative
+a
   img
     border: none
+  outline: none
+  &.b-button
+    color: #FFFFFF !important
+    text-decoration: none !important
+    padding-left: 30px !important
+    padding-right: 30px !important
+.b-button:hover
+  background: #44d258
+  color: #FFF
+  text-decoration: none
+.b-button-rz:hover
+  background: #FF99CC
+.b-button-green
+  background: #39b54a
+  box-shadow: 0 3px 0 #2b963a
+  &:hover
+    background: #44d258
+
+.b-button-blue
+  background: #2101FF
+  box-shadow: 0 3px 0 #3300CC
+  &:hover
+    background: #6699FF
 .g-phone
   font-size: 26px
   line-height: 28px
@@ -299,6 +367,7 @@ a
     height: 100%
 li.dropdown.mega-dropdown.active
   min-width: 160px
+/*mega-dropdown-menu */
 .bg-gray
   background-color: #F4F4F4
   color: #222222
@@ -331,5 +400,171 @@ li.dropdown.mega-dropdown.active
   padding-bottom: 100px
   &.bg-gray
     border-top: 0
-/*mega-dropdown-menu */
+  &.row-block-left
+    padding-top: 30px
+    padding-bottom: 30px
+  &.row-block-right
+    padding-top: 30px
+    padding-bottom: 30px
+    .h3
+      font-weight: 300!important
+      line-height: 1.25
+      margin-bottom: 0
+  .inner
+    padding-top: 30px
+    padding-bottom: 30px
+.row-block-action
+  margin-top: 40px
+.partners
+  padding: 30px 0
+  background-color: #F4F4F4
+  color: #222222
+  border: 1px solid #E2E2E2
+  margin-right: auto
+  margin-left: auto
+  width: 100%
+  .h2
+    font-size: 22px
+    line-height: normal
+    font-weight: 350
+    color: rgb(77, 76, 76)
+.contact
+  padding-top: 30px
+  padding-bottom: 30px
+  .h2
+    font-size: 22px
+    line-height: normal
+    font-weight: 350
+    color: rgb(77, 76, 76)
+.clients
+  box-shadow: none !important
+  margin-bottom: 0 !important
+  li
+    overflow: hidden
+    margin-left: 1px
+    position: relative
+    &:hover
+      background: #f6f6f6
+    img.color-img
+      top: 0
+      left: 0
+      display: none
+      position: absolute
+    &:hover img.color-img
+      display: block
+    img
+      filter: gray
+      float: none !important
+      margin: 0 auto !important
+      &:hover
+        filter: none
+  border: 0
+  overflow: hidden
+  margin-top: 10px
+  margin-bottom: 30px
+
+.flexslider
+  &.home
+    border: 0
+    overflow: hidden
+    margin-top: 10px
+    margin-bottom: 30px
+  margin-top: 10px !important
+  background: none !important
+  .flex-direction-nav a
+    margin-top: -10px !important
+
+#map-contacts
+  /* height: 388px */
+  width: 100%
+
+.contacts
+  text-align: center
+  margin: 20px 0 20px 0
+  .item
+    display: inline-block
+    height: 47px
+    font-size: 15px
+    color: #333333
+    text-align: left
+    span
+      display: block
+      margin: 5px 0 0
+      color: #555555
+      font-weight: 300
+    &.phone
+      padding: 0 0 0 63px
+      background: url('/img/contacts_phone.png') left center no-repeat
+    &.email
+      background: url('/img/contacts_email.png') 26px center no-repeat
+      position: relative
+      padding: 0 29px 0 95px
+    &.address
+      padding: 0 0 0 57px
+      background: url('/img/contacts_home.png') left center no-repeat
+footer
+  position: relative
+  background: #5a5a5a
+  z-index: 1
+  width: 100%
+  min-height: 120px
+  background: #5a5a5a
+  min-width: 1096px
+  margin-right: auto
+  margin-left: auto
+  .footer_group
+    display: table
+    padding-top: 45px
+    margin: auto
+    font-size: 0
+    width: 100%
+  ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+  .footer_list
+    display: table-cell
+    vertical-align: top
+    margin-left: 15px
+    padding: 0 15px 0 7px
+    min-width: 102px
+    font-size: 12px
+    white-space: normal
+    &:first-child
+      padding-left: 0
+      padding-right: 0
+      min-width: 80px
+    li
+      margin-bottom: 8px
+      line-height: 15px
+      &:first-child
+        color: #ffffff
+        font-size: 13px
+        text-transform: uppercase
+      span
+        display: block
+        &.phone, &.mail
+          font-size: 14px
+          font-weight: bold
+          color: white
+        &.phone a, &.mail a
+          color: white
+        &.color
+          color: #c4c4c4
+          font-size: 12px
+          line-height: 1
+      a
+        color: #c4c4c4
+        text-decoration: none
+        &:hover
+          color: #ffffff
+          text-decoration: none
+        &.title
+          text-transform: uppercase
+          color: #ffffff
+          &:hover
+            text-decoration: underline
+      .order_call
+        color: #00cc99
+        font-size: 14px
 @import "media" // Всегда в конце
