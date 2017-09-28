@@ -28,8 +28,16 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap/bootstrap.min.js',
 		'app/libs/flexslider/jquery.flexslider-min.js',
 		'app/libs/jquery.mmenu/jquery.mmenu.js',
+		'app/libs/maskedinput/jquery.maskedinput.min.js',
+		'app/libs/fineuploader/fineuploader-5.0.8.mod.min.js',
+		'app/libs/cookie/jquery.cookie.js',
+		'app/libs/fancybox/source/jquery.fancybox.pack.js@v=2.1.5',
+		'app/libs/highslide-4.1.13/highslide.packed.js',
+		'app/libs/share/modal_scrollspy_tab_drop.min.js',
+		'app/libs/share/share.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

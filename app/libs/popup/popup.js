@@ -47,7 +47,7 @@ $('.footer_list li:nth-child(4)').find('.phone').text('+7 (812) 425-34-01');
     //$('ul.footer_list:last-child').find('li:nth-child(2)').hide();
     //$('ul.footer_list:last-child').find('li:nth-child(3)').hide();
     //$('ul.footer_list:last-child').find('li:nth-child(4)').hide();
-
+/*
     (function(w) {
         if (w.fastXDM) return;
 
@@ -368,7 +368,7 @@ $('.footer_list li:nth-child(4)').find('.phone').text('+7 (812) 425-34-01');
             attachScript();
         }
     })(window);
-
+*/
 
     if (!window.VK) window.VK = {};
 
@@ -2525,7 +2525,7 @@ $(function() {
         '<div id="uprogress" class="text-center"></div>' +
         '<div id="result-fli" style="display:none"></div>' +
         '<div class="btni"><button id="senderi" class="submit-form btn btn-yellow" onclick="return false">Оставить заявку -></button></div>' +
-        '<div><p>Нажимая кнопку "Оставить заявку", я даю свое<br><a href="http://anti-print.ru/soglasie-na-obrabotku-personalnyx-dannyx">согласие на обработку персональных данных </a><br></p></div>'
+        '<div><p>Нажимая кнопку "Оставить заявку", я даю свое<br><a href="http://anti-print.ru/soglasie-na-obrabotku-personalnyx-dannyx">согласие на обработку персональных данных </a><br></p></div>'+
         '</form>' +
 
         '</div>' +
@@ -3297,7 +3297,6 @@ ymaps.ready(function() {
 
     });
 }); //ymaps.ready
-
 
 
 function selcity(val) {

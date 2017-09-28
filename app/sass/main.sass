@@ -231,7 +231,10 @@ a
   font-size: 13px
   margin-top: -5px
   letter-spacing: 3.6px
-
+.time-link, .time-link:hover, .time-link:focus 
+  color: #FFF
+  text-decoration: none
+  cursor: help
 .p-info
   .g-time
     a
@@ -567,8 +570,384 @@ footer
       .order_call
         color: #00cc99
         font-size: 14px
+
 #menu
   background-color: #F4F4F4
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before 
   background-color: #FFF
+// modal form
+.forma
+  background-color: rgba(0, 184, 169, 0.8)
+  font-family: "roboto",sans-serif
+  .forma-header
+    font-size: 18px
+    display: block
+    line-height: 21px
+    margin-bottom: 15px
+    text-align: center
+    color: white
+  .form-control
+    border: 1px solid #00b8a9
+    padding-left: 12px
+    font-size: 17px
+    height: 45px
+  .help-block
+    margin-top: 0
+    color: white
+  p.help-block
+    padding: 0
+
+#modal-callback .modal-title, .forma .modal-title
+  text-align: center
+  color: white
+  margin: 0
+  line-height: 1
+  font-size: 49px
+  font-weight: 100
+  text-transform: none
+  margin-bottom: 15px
+
+.modal-subtitle
+  font-size: 22px
+  text-transform: lowercase
+  font-weight: 100
+  margin-top: 7px
+
+.hr
+  width: 388px
+  height: 2px
+  background: #FFF
+  background: rgba(255, 255, 255, 0.39)
+  margin: 18px auto -8px auto
+
+.fupload-btn
+  padding: 8px 18px
+  font-size: 16px
+
+.send-btn
+  padding: 15px 18px
+  font-size: 18px
+
+#modal-callback .modal-body
+  background: #09BBAC
+  border-radius: 1px
+  padding: 10px 10px 5px 10px
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  width: 410px
+  margin: 10px auto 10px auto
+  position: relative
+
+.forma .modal-body
+  background: #09BBAC
+  border-radius: 1px
+  padding: 10px 10px 5px 10px
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  width: 410px
+  margin: 10px auto 10px auto
+  position: relative
+  &:before
+    content: ""
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 13px 13px 13px
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0)
+    position: absolute
+    top: -12px
+    left: 50%
+    margin-left: -13px
+
+#modal-callback .modal-body
+  &:before
+    content: ""
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 13px 13px 13px
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0)
+    position: absolute
+    top: -12px
+    left: 50%
+    margin-left: -13px
+  &:after
+    content: ""
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 14px 14px 14px
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #09BBAC rgba(0, 0, 0, 0)
+    position: absolute
+    top: -10px
+    left: 50%
+    margin-left: -14px
+
+.forma
+  .modal-body:after
+    content: ""
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 14px 14px 14px
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #09BBAC rgba(0, 0, 0, 0)
+    position: absolute
+    top: -10px
+    left: 50%
+    margin-left: -14px
+  .order-form
+    width: 388px
+    margin: 0 auto
+    color: white
+    padding-top: 0
+    margin-left: 20px
+
+#modal-callback .forma input[type=text]
+  width: 342px
+  margin-top: 0px
+
+.forma
+  input[type=text]
+    width: 340px
+    margin-top: 0px
+  .order-form .btn-group
+    margin-bottom: 8px
+  .btn-group
+    input[type=text]
+      padding: 13px 10px 10px 10px
+      &:focus
+        padding: 12px 9px 9px 9px
+    &.error input[type=text].has-error.error
+      padding: 12px 9px 9px 9px
+
+#modal-callback .forma .btni .btn
+  width: 342px
+
+.forma .btni
+  .btn
+    padding: 28px 0px 24px 0px
+    width: 340px
+    margin-top: 3px
+    font-size: 20px
+  padding-bottom: 13px
+
+.hhforma .btni
+  padding-bottom: 18px !important
+
+.forma
+  label
+    font-size: 17px
+    margin-bottom: 4px
+  .btn-group input
+    &.inline
+      float: left
+      width: 46px
+      margin-left: 4px
+    &.phone-country
+      margin-left: 0px
+    &.phone-code
+      margin-left: 4px
+      width: 75px
+    &.phone-number
+      width: 193px
+
+.submit-form.btn-yellow
+  padding: 36px 0px 29px 0px
+
+.form-btn.btn-yellow
+  width: 229px
+  height: 51px
+  font-size: 22px
+
+.btn-yellow
+  background: #fbe630
+  color: #262202
+  border-bottom: 3px solid #E2CF29
+  border-radius: 4px
+  &:hover
+    background: #ffef65
+
+.submit-form.btn-yellow
+  &:active, &[disabled=disabled]
+    width: 342px
+
+.form-btn.btn-yellow
+  &:active, &[disabled=disabled]
+    width: 230px
+
+.btn-yellow
+  &:active, &[disabled=disabled]
+    background: #ead72e
+    border-bottom: none
+    border-top: 3px solid #CCBD39
+    border-left: 3px solid #CCBD39
+
+#modal-callback .qq-uploader
+  width: 90%
+
+.forma
+  .qq-uploader
+    width: 90%
+  &.forma-mini .qq-uploader
+    width: 73%
+
+#modal-callback .qq-upload-file, .forma .qq-upload-file
+  color: #000000
+
+#modal-callback
+  .modal-header
+    border: 0
+  .modal-dialog
+    width: 480px
+  .close
+    position: absolute
+    font-size: 21px
+    line-height: 1
+    height: 26px
+    width: 36px
+    background: url(/img/sprite-modal.png) 6px 2px no-repeat
+    border: none
+    border-radius: 40px
+    cursor: pointer
+    vertical-align: top
+    font-weight: normal
+    font-family: serif
+    right: -1px
+    top: 2px
+
+.close:hover
+  background-position: -58px 2px
+
+.modal-open
+  overflow: hidden
+
+.modal
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1050
+  display: none
+  overflow: hidden
+  -webkit-overflow-scrolling: touch
+  outline: 0
+  &.fade .modal-dialog
+    -webkit-transition: -webkit-transform .3s ease-out
+    -o-transition: -o-transform .3s ease-out
+    transition: transform .3s ease-out
+    -webkit-transform: translate3d(0, -25%, 0)
+    -o-transform: translate3d(0, -25%, 0)
+    transform: translate3d(0, -25%, 0)
+  &.in .modal-dialog
+    -webkit-transform: translate3d(0, 0, 0)
+    -o-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.modal-open .modal
+  overflow-x: hidden
+  overflow-y: auto
+
+.modal-dialog
+  position: relative
+  width: auto
+  margin: 10px
+
+.modal-content
+  position: relative
+  background-color: #fff
+  -webkit-background-clip: padding-box
+  background-clip: padding-box
+  border: 1px solid #999
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+  outline: 0
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
+  background: #00B8A9
+
+.modal-header
+  min-height: 16.43px
+  padding: 15px
+  .close
+    margin-top: -2px
+
+.hhforma .modal-title
+  margin: 0 0 30px
+
+#modal-callback .modal-title
+  margin: 0
+  margin: 0 0 20px
+  line-height: 1
+  font-size: 49px
+  font-weight: 100
+  text-transform: none
+
+.forma .modal-title
+  margin: 0 0 20px
+  line-height: 1
+  font-size: 49px
+  font-weight: 100
+  text-transform: none
+
+.modal-body
+  position: relative
+  padding: 15px
+  padding-bottom: 20px
+  &.mini
+    padding-bottom: 5px
+
+.modal-footer
+  padding: 15px
+  text-align: right
+  border-top: 1px solid #e5e5e5
+  .btn + .btn
+    margin-bottom: 0
+    margin-left: 5px
+  .btn-group .btn + .btn
+    margin-left: -1px
+  .btn-block + .btn-block
+    margin-left: 0
+
+.modal-scrollbar-measure
+  position: absolute
+  top: -9999px
+  width: 50px
+  height: 50px
+  overflow: scroll
+
+@media (min-width: 768px)
+  .modal-dialog
+    width: 600px
+    margin: 30px auto
+  .modal-content
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+  .modal-sm
+    width: 300px
+
+@media (min-width: 992px)
+  .modal-lg
+    width: 900px
+
+.modal:focus
+  outline: none
+
+.modal-subtitle
+  font-size: 22px
+  text-transform: lowercase
+  font-weight: 100
+  margin-top: 7px
+
+.modal .hr
+  width: 388px
+  height: 2px
+  background: #FFF
+  background: rgba(255, 255, 255, 0.39)
+  margin: 18px auto -8px auto
+
+.btn-group
+  &::-moz-placeholder
+    color: #999
+    opacity: 1
+  &:-ms-input-placeholder, &::-webkit-input-placeholder
+    color: #999
 @import "media" // Всегда в конце
